@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Broadcast API</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<div style="padding: 10px">
+    <h4 style="margin: 0">Broadcast Channel Steps:</h4>
+    <ol style="margin: 0 0 10px;">
+      <li>Open a new 'Tab' or 'Window' by copying or duplicating the current tab URL (Say 'Tab A' [Current Tab], 'Tab B' [New tab])</li>
+      <li>Click the button 'CREATE/JOIN CHANNEL' on both 'Tab A' and 'Tab B'</li>
+      <li>In 'Tab A' type anything inside the textarea</li>
+      <li>Click the button 'SEND MESSAGE' on 'Tab A'</li>
+      <li>Now open the 'Tab B', you'll see the received message</li>
+    </ol>
+  <textarea id="typed-message" cols="70" rows="10" placeholder="Type here..."></textarea>
+  <div style="margin-bottom: 10px">
+    <button onclick="createChannel()">CREATE/JOIN CHANNEL</button>
+    <button onclick="sendMessage()">SEND MESSAGE</button>
+    <button onclick="closeChannel()">CLOSE CHANNEL</button>
+  </div>
+  <div  id="info"></div>
+  <div id="received-message"></div>
+</div>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
