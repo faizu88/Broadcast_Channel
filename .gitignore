@@ -5,3 +5,8 @@ node_modules
 dist
 .cache
 .idea/
+.firebase/
+.firebaserc
+firebase-public
+firebase-debug.log
+firebase.json
